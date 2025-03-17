@@ -1,48 +1,47 @@
-Tic-Tac-Toe Game
+# Tic-Tac-Toe Game
 
-Project Description
+## Description
+This project is a simple **Tic-Tac-Toe game** implemented in C, designed for two players to play against each other on a 3x3 board. The game tracks the score of each player and allows replaying multiple rounds.
 
-This project is a simple Tic-Tac-Toe game implemented in C. It allows two players to play against each other, keeping track of scores and allowing for multiple rounds of gameplay.
+## Features
+- Two-player game with alternating turns (Player X and Player O).
+- Continuous score tracking for both players.
+- Detection of win, loss, and draw conditions.
+- Option to replay the game as many times as desired.
+- User-friendly console-based interface.
 
-Features
+## How to Play
+1. The game starts with an empty 3x3 board.
+2. Players take turns entering the row and column number (1 to 3) where they want to place their mark (X or O).
+3. The board updates after every valid move.
+4. The game declares a winner if a player aligns three of their marks horizontally, vertically, or diagonally.
+5. The game declares a draw if all cells are filled without any winner.
+6. Players are prompted to play again or exit after each game.
 
-Two-player gameplay (Player X and Player O).
-
-Dynamic scoreboard to track wins for each player.
-
-Detection of game draws and wins.
-
-Option to play multiple games in a row.
-
-How to Play
-
-The game starts with Player X making the first move.
-
-Players alternate turns, inputting row and column numbers (1 to 3) to place their marker (X or O) on the board.
-
-The game checks for a win or draw after each move.
-
-The winner is announced when a player successfully places three of their symbols in a row, column, or diagonal.
-
-The game continues until players decide not to play again.
-
-Compilation and Usage
-
-Compile the code using:
-
+## Compilation and Execution
+Compile the code using the following command:
+```
 gcc -o TicTacToe TicTacToe.c
-
+```
 Run the executable:
-
+```
 ./TicTacToe
+```
 
-Follow the on-screen instructions to play the game.
+## Example Gameplay
+```
+Current Board:
+   X │ O │ X
+  ═══╪═══╪═══
+   O │ X │ O
+  ═══╪═══╪═══
+   X │   │ O
 
-Future Improvements
+Player X wins!
+```
 
-Implementing AI to allow single-player mode.
-
-Enhancing the user interface for a better experience.
-
-Adding functionality for saving and loading game states.
+## Future Improvements
+- Implementing AI for single-player mode.
+- Enhancing the UI for a better visual experience.
+- Adding input validation and move hints.
 
